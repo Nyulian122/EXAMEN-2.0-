@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+    <link rel="stylesheet" href="./css/config.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <button class="boton">Ingrese nuevo usuario</button>
+    </div>
+
+
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Ingrese nuevo usuario</h2>
+            <form id="formularioUsuario">
+                <label for="nombreCompleto">Nombre completo:</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                <label for="correoElectronico">Correo electrónico:</label>
+                <input type="email" id="correoElectronico" name="correoElectronico" required>
+                <input type="submit" value="Agregar Usuario">
+            </form>
+        </div>
+    </div>
+
+
+    <div id="contenedorDatos"></div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
